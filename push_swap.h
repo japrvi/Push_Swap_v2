@@ -23,13 +23,13 @@ typedef struct	s_circular
 
 typedef struct	s_monitor
 {
-	t_node				*stack_a;
-	t_node				*stack_b;
-	int					*list;
-	int					*s_list;
-	unsigned int		*List;
-	int					amount;
-	int					size;
+	t_circular	*stack_a;
+	t_circular	*stack_b;
+	int			*list;
+	int			*s_list;
+	int			*List;
+	int			amount;
+	int			size;
 }	t_monitor;
 
 
@@ -49,9 +49,19 @@ int				*deep_copy(int *list, int amount);
 int				*merge_sort(int n_elements, int *list);
 int				*merge(int l_elements, int r_elements, int *lst, int *rst);
 void			set_up(t_monitor *mon);
-unsigned int	*label(int *list, int *s_list, int amount);
-unsigned int	search(int *list, int patter, int amount);
+int				*label(int *list, int *s_list, int amount);
+int				search(int *list, int patter, int amount);
+void			set_up(t_monitor *mon);
+t_circular		*stack_init(void);
+void			rutine(t_monitor *mon);
+void			easy_case(t_monitor *mon);
+void			array_to_stack(int size, int *list, t_circular *stack);
+t_node			*new_node(unsigned int element);
+void			clean_nodes(t_node *first, t_node *last);
+void			add(t_circular *stack, t_node *element);
+t_node			pop(t_circular *stack);
 
-void	print_list(int amount, int *list);
-void	erro_list(int *nlist);
+void			print_list(int amount, int *list);
+void			erro_list(int *nlist);
+void			print_stack();
 #endif

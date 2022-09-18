@@ -17,8 +17,5 @@ int	main(int argc, char **argv)
 
 	mon_init(&mon);
 	init(argc, argv, &mon);
-	preparer(&mon);
-	free(mon.list);
-	free(mon.s_list);
-	free(mon.List);
+	set_up(&mon);
 }

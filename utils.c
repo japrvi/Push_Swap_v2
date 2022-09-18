@@ -28,6 +28,8 @@ int	n_atoi(char *str, int i, t_monitor *mon)
 			error_msg(mon->list);
 		i++;
 	}
+	if (str[i] != 0 && str[i] != ' ')
+		error_msg(mon->list);
 	(mon->list)[(mon->amount)++] = res;
 	return ((int) i);
 }
@@ -44,6 +46,8 @@ int	p_atoi(char *str, int i, t_monitor *mon)
 			error_msg(mon->list);
 		i++;
 	}
+	if (str[i] != 0 && str[i] != ' ')
+		error_msg(mon->list);
 	(mon->list)[(mon->amount)++] = res;
 	return ((int) i);
 }
