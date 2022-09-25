@@ -1,5 +1,22 @@
 #include "push_swap.h"
 
+t_node	*disconnect(t_node *previous,  t_node *element, t_node *next)
+{
+	element->next = NULL;
+	element->previous = NULL;
+	next->previous = previous;
+	previous->next = next;
+	return (element);
+}
+
+void	connect(t_node *previous, t_node *element, t_node *next)
+{
+	element->previous = previous;
+	element->next = next;
+	next->previous = element;
+	previous->next = element;
+}
+
 t_node	*new_node(unsigned int element)
 {
 	t_node	*res;

@@ -19,6 +19,7 @@ typedef struct	s_circular
 	t_node			*last;
 	unsigned int	min;
 	unsigned int	max;
+	int				size;
 }	t_circular;
 
 typedef struct	s_monitor
@@ -58,8 +59,10 @@ void			easy_case(t_monitor *mon);
 void			array_to_stack(int size, int *list, t_circular *stack);
 t_node			*new_node(unsigned int element);
 void			clean_nodes(t_node *first, t_node *last);
+void			connect(t_node *previous, t_node *element, t_node *next);
+t_node			*disconnect(t_node *previous, t_node *element, t_node *next);
 void			add(t_circular *stack, t_node *element);
-t_node			pop(t_circular *stack);
+t_node			*pop(t_circular *stack);
 
 void			print_list(int amount, int *list);
 void			erro_list(int *nlist);
