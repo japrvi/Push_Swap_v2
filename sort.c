@@ -6,13 +6,13 @@
 /*   By: jpozuelo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/25 19:39:38 by jpozuelo          #+#    #+#             */
-/*   Updated: 2022/09/25 19:39:39 by jpozuelo         ###   ########.fr       */
+/*   Updated: 2022/10/01 20:10:12 by jpozuelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-unsigned int	search(int *list, int pattern, int amount)
+int	search(int *list, int pattern, int amount)
 {
 	unsigned int	i;
 	unsigned int	max;
@@ -28,12 +28,12 @@ unsigned int	search(int *list, int pattern, int amount)
 	return (i);
 }
 
-unsigned int	*label(int *list, int *s_list, int amount)
+int	*label(int *list, int *s_list, int amount)
 {
 	int				i;
-	unsigned int	*res;
+	int				*res;
 
-	res = (unsigned int *) malloc(sizeof(int) * amount);
+	res = (int *) malloc(sizeof(int) * amount);
 	i = 0;
 	while (i < amount)
 	{

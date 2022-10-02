@@ -6,7 +6,7 @@
 /*   By: jpozuelo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/25 19:36:22 by jpozuelo          #+#    #+#             */
-/*   Updated: 2022/09/25 19:37:15 by jpozuelo         ###   ########.fr       */
+/*   Updated: 2022/10/01 20:14:34 by jpozuelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,8 +75,9 @@ void			connect(t_node *previous, t_node *element, t_node *next);
 t_node			*disconnect(t_node *previous, t_node *element, t_node *next);
 void			add(t_circular *stack, t_node *element);
 t_node			*pop(t_circular *stack);
+void			array_to_stack(int size, int *list, t_circular *stack);
 
 void			print_list(int amount, int *list);
 void			erro_list(int *nlist);
-void			print_stack();
+void			print_stack(t_circular *stack);
 #endif

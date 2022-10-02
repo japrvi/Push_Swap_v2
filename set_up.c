@@ -6,7 +6,7 @@
 /*   By: jpozuelo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/25 19:39:24 by jpozuelo          #+#    #+#             */
-/*   Updated: 2022/09/25 19:39:26 by jpozuelo         ###   ########.fr       */
+/*   Updated: 2022/10/01 20:12:29 by jpozuelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ void	set_up(t_monitor *mon)
 	free(mon->list);
 	free(mon->s_list);
 	free(mon->List);
+	print_stack(mon->stack_a);
 	/*if (mon->amount < 3)
 		easy_case(mon);
 	else
@@ -55,6 +56,7 @@ t_circular	*stack_init(void)
 	res = (t_circular *) malloc(sizeof(t_circular));
 	res->first = NULL;
 	res->last = NULL;
+	res->size = 0;
 	return (res);
 }
 
