@@ -6,7 +6,7 @@
 /*   By: jpozuelo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/25 19:36:22 by jpozuelo          #+#    #+#             */
-/*   Updated: 2022/10/01 20:14:34 by jpozuelo         ###   ########.fr       */
+/*   Updated: 2022/10/08 18:54:52 by jpozuelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ typedef struct	s_circular
 	unsigned int	min;
 	unsigned int	max;
 	int				size;
+	char			letter;
 }	t_circular;
 
 typedef struct	s_monitor
