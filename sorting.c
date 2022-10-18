@@ -1,34 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.c                                        :+:      :+:    :+:   */
+/*   sorting.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jpozuelo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/25 19:39:03 by jpozuelo          #+#    #+#             */
-/*   Updated: 2022/10/18 13:44:22 by jpozuelo         ###   ########.fr       */
+/*   Created: 2022/10/18 12:51:34 by jpozuelo          #+#    #+#             */
+/*   Updated: 2022/10/18 13:44:20 by jpozuelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	mon_init(t_monitor *mon)
+void	sort_two_three(t_monitor *mon, int amount)
 {
-	mon->stack_a = NULL;
-	mon->stack_b = NULL;
-	mon->list = NULL;
-	mon->List = NULL;
-	mon->s_list = NULL;
-	mon->amount = 0;
-	mon->size = 0;
+	if (amount == 2)
+		swap(mon->stack_a, "sa\n");
 }
 
-int	main(int argc, char **argv)
+void	sorting(t_monitor *mon)
 {
-	t_monitor	mon;
-
-	mon_init(&mon);
-	init(argc, argv, &mon);
-	set_up(&mon);
-	sorting(&mon);
+	if (mon->amount <= 3)
+		sort_two_three(mon, mon->amount);
+	else if (mon->amount <= 6)
+		sort_six(mon, mon->amount);
+	else
+		big_sort(mon, mon->amount);
+	clean(mon);
 }

@@ -6,7 +6,7 @@
 /*   By: jpozuelo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/25 19:36:22 by jpozuelo          #+#    #+#             */
-/*   Updated: 2022/10/08 18:54:52 by jpozuelo         ###   ########.fr       */
+/*   Updated: 2022/10/18 13:44:24 by jpozuelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,10 @@ t_node			*disconnect(t_node *previous, t_node *element, t_node *next);
 void			add(t_circular *stack, t_node *element);
 t_node			*pop(t_circular *stack);
 void			array_to_stack(int size, int *list, t_circular *stack);
+void			sorting(t_monitor *mon);
+void			sort_two_three(t_monitor *mon, int amount);
+void			swap(t_circular *stack, char *letter);
+void			swap_t(t_circular *stack_a, t_circular *stack_b);
 
 void			print_list(int amount, int *list);
 void			erro_list(int *nlist);
