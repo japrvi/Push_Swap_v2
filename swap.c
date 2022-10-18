@@ -6,7 +6,7 @@
 /*   By: jpozuelo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 17:46:47 by jpozuelo          #+#    #+#             */
-/*   Updated: 2022/10/08 18:08:45 by jpozuelo         ###   ########.fr       */
+/*   Updated: 2022/10/18 16:32:29 by jpozuelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,5 +35,5 @@ void	swap_s(t_circular *stack_a, t_circular *stack_b)
 {
 	swap(stack_a, NULL);
 	swap(stack_b, NULL);
-	write(1, "ss\n", 3);
+	write(1, SS, 3);
 }

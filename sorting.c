@@ -6,7 +6,7 @@
 /*   By: jpozuelo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 12:51:34 by jpozuelo          #+#    #+#             */
-/*   Updated: 2022/10/18 13:44:20 by jpozuelo         ###   ########.fr       */
+/*   Updated: 2022/10/18 16:32:39 by jpozuelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	sort_two_three(t_monitor *mon, int amount)
 {
 	if (amount == 2)
-		swap(mon->stack_a, "sa\n");
+		swap(mon->stack_a, SA);
 }
 
 void	sorting(t_monitor *mon)

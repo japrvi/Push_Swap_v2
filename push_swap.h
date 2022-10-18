@@ -6,7 +6,7 @@
 /*   By: jpozuelo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/25 19:36:22 by jpozuelo          #+#    #+#             */
-/*   Updated: 2022/10/18 13:44:24 by jpozuelo         ###   ########.fr       */
+/*   Updated: 2022/10/18 16:30:31 by jpozuelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,17 @@
 # include <stdio.h>
 # include <unistd.h>
 # include <limits.h>
+# define SA "sa\n"
+# define SB "sb\n"
+# define SS "ss\n"
+# define PA "pa\n"
+# define PB "pb\n"
+# define RA "ra\n"
+# define RB "rb\n"
+# define RR "rr\n"
+# define RRA "rra\n"
+# define RRB "rrb\n"
+# define RRR "rrr\n"
 
 typedef struct	s_node
 {
