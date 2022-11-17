@@ -6,7 +6,7 @@
 /*   By: jpozuelo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/25 19:36:22 by jpozuelo          #+#    #+#             */
-/*   Updated: 2022/10/18 16:30:31 by jpozuelo         ###   ########.fr       */
+/*   Updated: 2022/11/17 20:54:41 by jpozuelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,6 +92,10 @@ void			sorting(t_monitor *mon);
 void			sort_two_three(t_monitor *mon, int amount);
 void			swap(t_circular *stack, char *letter);
 void			swap_t(t_circular *stack_a, t_circular *stack_b);
+void			rotate(t_circular *stack, char *letter);
+void			reverse(t_circular *stack, char *letter);
+void			r_rotate(t_circular *stack_a, t_circular *stack_b);
+void			r_reverse(t_circular *stack_a, t_circular *stack_b);
 
 void			print_list(int amount, int *list);
 void			erro_list(int *nlist);
